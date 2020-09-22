@@ -25,7 +25,7 @@ Libevent、libev、libuv三个网络库，都是c语言实现的异步事件库A
 
 ## 三、在github上的影响力：
 
-![img](..\..\pictures\io_lib_github1)
+![img](../../pictures/io_lib_github1)
 
 
 可见，目前libuv的影响力最大，其次是libevent，libev关注的人较少。
@@ -36,7 +36,7 @@ Libevent、libev、libuv三个网络库，都是c语言实现的异步事件库A
 
 ## 四、事件种类
 
-![1574678717968](C:\Users\wpzhou\AppData\Roaming\Typora\typora-user-images\1574678717968.png)
+![1574678717968](../../pictures/1574678717968.png)
 
 
 
@@ -46,7 +46,7 @@ Libevent、libev、libuv三个网络库，都是c语言实现的异步事件库A
 ## 五、可移植性
 三个库都支持Linux, *BSD, Mac OS X, Solaris, Windows
 
-![1574678762767](C:\Users\wpzhou\AppData\Roaming\Typora\typora-user-images\1574678762767.png)
+![1574678762767](../../pictures/1574678762767.png)
 
 
 对于Unix/Linux平台，没有什么大不同，优先选择epoll，对于windows，libevent、libev都使用select检测和分发事件（不I/O），libuv在windows下使用IOCP。libevent有一个socket handle, 在windows上使用IOCP进行读写。libev没有类似的。但是libevent的IOCP支持也不是很好（性能不高）。所以如果是在windows平台下，使用原生的IOCP进行I/O，或者使用libuv。
