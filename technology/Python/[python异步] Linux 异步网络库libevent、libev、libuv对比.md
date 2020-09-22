@@ -25,7 +25,7 @@ Libevent、libev、libuv三个网络库，都是c语言实现的异步事件库A
 
 ## 三、在github上的影响力：
 
-![img](I:\笔记\pictures\io_lib_github1)![img](I:\笔记\pictures\io_lib_github2)
+![img](..\..\pictures\io_lib_github1)
 
 
 可见，目前libuv的影响力最大，其次是libevent，libev关注的人较少。
