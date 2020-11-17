@@ -1,6 +1,5 @@
+# [python异步] Linux 多路复用IO模型 Select,Poll,Epoll 对比
 [TOC]
-
-
 
 操作系统在处理io的时候，主要有两个阶段：
 
@@ -22,19 +21,13 @@
 
 select的工作流程： 单个进程就可以同时处理多个网络连接的io请求（同时阻塞多个io操作）。基本原理就是程序呼叫select，然后整个程序就阻塞了，这时候，kernel就会轮询检查所有select负责的fd，当找到一个client中的数据准备好了，select就会返回，这个时候程序就会系统调用，将数据从kernel复制到进程缓冲区。
 
-
-
-![image.png](I:\笔记\pictures\io_select_process)
-
-
+![](../../pictures/[python异步] Linux 多路复用IO模型 Select,Poll,Epoll 对比/io_select_process.jpg)
 
 下图为select同时从多个客户端接受数据的过程
 
 虽然服务器进程会被select阻塞，但是select会利用内核不断轮询监听其他客户端的io操作是否完成。
 
-
-
-![image.png](I:\笔记\pictures\io_select_time)
+![](../../pictures/[python异步] Linux 多路复用IO模型 Select,Poll,Epoll 对比/io_select_time.jpg)
 
 
 

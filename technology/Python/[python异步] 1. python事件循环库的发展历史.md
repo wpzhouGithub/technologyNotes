@@ -15,7 +15,7 @@ Python 3.4 加入了asyncio 库，使得Python有了支持异步IO的官方库�
 
 Python 3.4 刚开始的asyncio的协程还是基于生成器的，通过 yield from 语法实现，可以通过装饰器 @asyncio.coroutine （已过时）装饰一个函数来定义一个协程。比如：
 
-![asyncio装饰器](I:\笔记\pictures\asyncio.png)
+![](../../pictures/[python异步] python事件循环库的发展历史/asyncio.png)
 
 Python 3.5 引入了两个新的关键字 await 和 async 用来替换 @asyncio.coroutine 和 yield from ，从语言本身来支持异步IO。从而使得异步编程更加简洁，并和普通的生成器区别开来。
 
@@ -23,7 +23,7 @@ Python 3.5 引入了两个新的关键字 await 和 async 用来替换 @asyncio.
 
 Python 3.7 又进行了优化，把API分组为高层级API和低层级API。 我们先看看下面的代码，发现与上面的有什么不同？
 
-![asyncio python api接口](I:\笔记\pictures\asyncio-python.png)
+![](../../pictures/[python异步] python事件循环库的发展历史/asyncio-python.png)
 
 除了用 async 替换 @asyncio.coroutine 和用 await 替换 yield from 外，最大的变化就是关于eventloop的代码不见了，只有一个 async.run()。这就是 3.7 的改进，把eventloop相关的API归入到低层级API，新引进run()作为高层级API让写应用程序的开发者调用，而不用再关心eventloop。除非你要写异步库（比如MySQL异步库）才会和eventloop打交道。
 
@@ -39,7 +39,7 @@ Python 3.7 又进行了优化，把API分组为高层级API和低层级API。 �
 
 uvloop是用Cython写的，基于libuv这个C语言实现的高性能异步I/O库。asyncio自己的事件循环是用Python写的，用uvloop替换asyncio自己的事件循环可以使asyncio的速度更快。并且使用相当简洁：
 
-![uvloop](I:\笔记\pictures\uvloop.png)
+![uvloop](../../pictures/uvloop.png)
 
 ## 四、总结
 1. 异步IO用在费时的IO操作上以提高程序整体效率。

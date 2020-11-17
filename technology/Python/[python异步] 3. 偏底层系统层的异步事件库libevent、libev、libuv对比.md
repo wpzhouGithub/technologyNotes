@@ -1,8 +1,10 @@
+# [python异步] 偏底层系统层的异步事件库libevent、libev、libuv对比
+
 @[TOC]([python异步] Linux 异步网络库libevent、libev、libuv对比)
 
 ## 一、概念：事件、事件循环
 
-Libevent、libev、libuv三个网络库，都是c语言实现的异步事件库Asynchronousevent library。
+Libevent、libev、libuv三个异步事件库，都是c语言实现的异步事件库Asynchronousevent library。
 
 异步事件库本质上是提供异步事件通知（Asynchronous Event Notification，AEN）的。异步事件通知机制就是根据发生的事件，调用相应的回调函数进行处理。
 
@@ -25,7 +27,7 @@ Libevent、libev、libuv三个网络库，都是c语言实现的异步事件库A
 
 ## 三、在github上的影响力：
 
-![img](../../pictures/io_lib_github1)
+![img](../../pictures/[python异步] 3. 偏底层系统层的异步事件库libevent、libev、libuv对比/io_lib_github1)![img](../../pictures/[python异步] 3. 偏底层系统层的异步事件库libevent、libev、libuv对比/20170505164016535)
 
 
 可见，目前libuv的影响力最大，其次是libevent，libev关注的人较少。

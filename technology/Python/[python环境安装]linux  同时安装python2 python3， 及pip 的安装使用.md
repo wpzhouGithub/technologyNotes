@@ -1,4 +1,7 @@
-﻿@[TOC](linux  同时安装python2 python3， 及pip 的安装使用)
+# [python环境安装]linux  同时安装python2 python3， 及pip 的安装使用
+
+[TOC]
+
 # 1. python 的安装
 
  - 由于ubuntu系统自带python2.7（默认）和python3.4，所以不需要自己安装python。 
