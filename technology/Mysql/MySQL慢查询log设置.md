@@ -59,7 +59,7 @@ mysql> show variables like 'long_query_time';
 1 row in set (0.00 sec)
 
 # 使用global之后，全局生效； 本地查看值不会有变化，需要exit 再进入，才能生效； 使用另外的账号登录，也生效了
-mysql> set  global long_query_time = 0.11;
+mysql> set  global long_query_time = 0.200;
 Query OK, 0 rows affected (0.00 sec)
 
 mysql> show variables like 'long_query_time';

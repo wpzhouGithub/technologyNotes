@@ -47,8 +47,6 @@ superset db upgrade
 superset init
 ```
 
-
-
 如果已有数据，可以备份数据之后直接升级
 
 # 四、实现

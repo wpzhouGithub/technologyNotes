@@ -40,6 +40,13 @@ Celery默认已支持Redis、RabbitMQ、MongoDB、Django ORM、SQLAlchemy等方�
 
    
 
+
+## 多台机器启动worker
+
+https://docs.celeryproject.org/en/stable/userguide/routing.html
+
+
+
 ## 未知
 
 结果存储

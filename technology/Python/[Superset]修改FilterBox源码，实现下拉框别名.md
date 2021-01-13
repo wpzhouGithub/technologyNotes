@@ -1,4 +1,4 @@
-[Superset]修改FilterBox源码，实现下拉框别名name
+# [Superset]修改FilterBox源码，实现下拉框别名name
 
 ## 一、背景
 
@@ -109,7 +109,7 @@ superset run -h 0.0.0.0 -p 8089 --with-threads --reload --debugger
   "viz_type": "filter_box"
 }
 ```
-3. `app_alias`这一列如果存在于源表中，是最好的了； 如果不存在，需要自己处理一下源表的SQL； 此处是计原query创建的chart，所以修改了query，新增加一列`app_alias`； 如下：
+3. `app_alias`这一列如果存在于源表中，是最好的了； 如果不存在，需要自己处理一下源表的SQL； 此处是基于query创建的chart，所以修改了query，新增加一列`app_alias`； 如下：
 
    ```sql
    SELECT a.app, a.country, a.ad_manager, IFNULL(info.app_name,a.app) app_alias
