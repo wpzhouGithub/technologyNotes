@@ -7,7 +7,7 @@
 
 首先下载安装包，然后解压，如下图；
 
-![1602225198712](../../pictures/pycharm_activate_files.png)
+![1602225198712](../../pictures/[Pycharm] 2020.1 破解 亲测有效/pycharm_activate_files.png)
 
 ## 安装步骤
 

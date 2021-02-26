@@ -12,7 +12,7 @@
 
 1. ps aux | grep nginx 查看nginx worker的pid； cat /proc/pid/limits 查看限制
 
-   ![image-20201224152803017](../../pictures/[nginx] /image-20201224152803017.png)
+   ![image-20201224152803017](../../pictures/[nginx] too many open files/image-20201224152803017.png)
 
    如图，soft open files的只只有1024
 
@@ -29,7 +29,7 @@
    # 再去查看nginx进程的limits, 并没有变化
    ```
 
-   ![image-20201224153148748](../../pictures/[nginx] /image-20201224153148748.png)
+   ![image-20201224153148748](../../pictures/[nginx] too many open files/image-20201224153148748.png)
 
    ```shell
    # vim /usr/local/nginx/conf/nginx.conf  
@@ -48,6 +48,6 @@
    
    ```
 
-   ![image-20201224153628994](../../pictures/[nginx] /image-20201224153628994.png)
+   ![image-20201224153628994](../../pictures/[nginx] too many open files/image-20201224153628994.png)
 
 查看limits已生效，check error_log 没有再报错了

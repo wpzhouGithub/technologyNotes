@@ -46,7 +46,7 @@ typedef struct {
 
 - ob_size 标记了元素个数
 
-![img](../../pictures/[python数据结构] list 列表底层原理/v2-a2892a8de76c6981f4180a8f84b42da2_720w.png)
+![img1](../../pictures/[python数据结构] list 列表底层原理/v2-a2892a8de76c6981f4180a8f84b42da2_720w.png)
 
 
 
@@ -102,7 +102,7 @@ Appand 操作的时间复杂度 O(1)
 
 
 
-![img](../../pictures/[python数据结构] list 列表底层原理/v2-a2892a8de76c6981f4180a8f84b42da2_720w.png)
+![img2](../../pictures/[python数据结构] list 列表底层原理/v2-a2892a8de76c6981f4180a8f84b42da2_720w.png)
 
 
 
@@ -112,7 +112,7 @@ Appand 操作的时间复杂度 O(1)
 
 
 
-![img](../../pictures/[python数据结构] list 列表底层原理/v2-24d48a61dbb9d17540bea317e7246648_720w.png)
+![img3](../../pictures/[python数据结构] list 列表底层原理/v2-24d48a61dbb9d17540bea317e7246648_720w.png)
 
 
 
@@ -132,7 +132,7 @@ ins1:
 
 
 
-![img](../../pictures/[python数据结构] list 列表底层原理/v2-61e75a63cfa785457bc9d48de7203cd9_720w.jpg)
+![img4](../../pictures/[python数据结构] list 列表底层原理/v2-61e75a63cfa785457bc9d48de7203cd9_720w.jpg)
 
 
 
@@ -161,7 +161,7 @@ Pop 操作的复杂度为 O(1).
 
 
 
-![img](../../pictures/[python数据结构] list 列表底层原理/v2-81d6789204bbb66f96b152c073350f72_720w.jpg)
+![img5](../../pictures/[python数据结构] list 列表底层原理/v2-81d6789204bbb66f96b152c073350f72_720w.jpg)
 
 
 
@@ -175,7 +175,7 @@ Pop 操作的复杂度为 O(1).
 
 
 
-![img](../../pictures/[python数据结构] list 列表底层原理/v2-3a11480f927ec319147a120dd22421af_720w.jpg)
+![img6](../../pictures/[python数据结构] list 列表底层原理/v2-3a11480f927ec319147a120dd22421af_720w.jpg)
 
 
 
@@ -210,7 +210,7 @@ Remove操作的复杂度为O(n).
 
 
 
-![img](../../pictures/[python数据结构] list 列表底层原理/v2-bd23597a9fcb87e164a321157c117311_720w.jpg)
+![img7](../../pictures/[python数据结构] list 列表底层原理/v2-bd23597a9fcb87e164a321157c117311_720w.jpg)
 
 
 

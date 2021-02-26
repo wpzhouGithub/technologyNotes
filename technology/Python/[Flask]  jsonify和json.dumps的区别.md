@@ -27,8 +27,8 @@ if __name__ == '__main__':
 ```
 
 用chrome浏览器访问得到的页面如下图：
-![在这里插入图片描述](../../pictures/jsonify.png)
-![在这里插入图片描述](../../pictures/jsonify1.png)
+![在这里插入图片描述](../../pictures/[Flask]  jsonify和json.dumps的区别/jsonify.png)
+![在这里插入图片描述](../../pictures/[Flask]  jsonify和json.dumps的区别/jsonify1.png)
 
 ### 2. json.dumps的返回
 
@@ -50,8 +50,8 @@ if __name__ == '__main__':
     app.run()
 ```
 用chrome访问的响应页面如下图。
-![在这里插入图片描述](../../pictures/jsondumps.png)
-![在这里插入图片描述](../../pictures/jsondumps1.png)
+![在这里插入图片描述](../../pictures/[Flask]  jsonify和json.dumps的区别/jsondumps.png)
+![在这里插入图片描述](../../pictures/[Flask]  jsonify和json.dumps的区别/jsondumps1.png)
 
 可以看到content-type 为text/html， 为什么不是别的呢？
 

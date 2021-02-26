@@ -4,7 +4,7 @@
 
 superset提高的filterbox 下拉框选择，不支持别名的形式；即value和name都是一个值，在配置filterbox的时候选择； 并没有提高别名的功能；要实现别名，只能自己二次开发了；
 
-![superset_filterbox1](../../pictures/superset_filterbox1.png)
+![superset_filterbox1](../../pictures/[Superset]修改FilterBox源码，实现下拉框别名/superset_filterbox1.png)
 
 
 
