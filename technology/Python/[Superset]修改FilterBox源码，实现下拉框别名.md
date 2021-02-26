@@ -115,9 +115,9 @@ superset run -h 0.0.0.0 -p 8089 --with-threads --reload --debugger
    SELECT a.app, a.country, a.ad_manager, IFNULL(info.app_name,a.app) app_alias
    FROM
    (
-   SELECT  distinct app app,  country, ad_manager
-FROM summary_day_country
-   WHERE data_time > date_sub(NOW(), interval 15 day)
+    SELECT  distinct app app,  country, ad_manager
+    FROM summary_day_country
+    WHERE data_time > date_sub(NOW(), interval 15 day)
    ) a
    LEFT OUTER JOIN conf_apps info
    on a.app = info.app_key
@@ -248,15 +248,15 @@ class FilterBoxViz(BaseViz):
 - [x] 修改filter对应的query语句
 
   ```mysql
-SELECT a.app, a.country, a.ad_manager, IFNULL(info.app_name,a.app) app_alias
-  FROM
-(
-SELECT  distinct app app,  country, ad_manager
-FROM summary_day_country
-  WHERE data_time > date_sub(NOW(), interval 15 day)
-) a
-  LEFT OUTER JOIN conf_apps info
-  on a.app = info.app_key
+  SELECT a.app, a.country, a.ad_manager, IFNULL(info.app_name,a.app) app_alias
+    FROM
+  (
+    SELECT  distinct app app,  country, ad_manager
+    FROM summary_day_country
+    WHERE data_time > date_sub(NOW(), interval 15 day)
+  ) a
+    LEFT OUTER JOIN conf_apps info
+    on a.app = info.app_key
   ```
 
 - [x] 修改filter的配置，增加alias配置
