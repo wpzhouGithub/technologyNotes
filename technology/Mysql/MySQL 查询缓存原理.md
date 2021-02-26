@@ -1,6 +1,6 @@
 ## MySQL查询过程流程图
 
-![](I:\笔记\pictures\mysql_query.jpeg)
+![](../../pictures/mysql_query.jpeg)
 
 ## 查询缓存
 

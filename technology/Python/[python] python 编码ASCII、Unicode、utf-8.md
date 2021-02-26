@@ -74,7 +74,7 @@ Unicode编码是一个统一的编码，其他编码类型之间相互转换，�
 
 用记事本编辑的时候，从文件读取的UTF-8字符被转换为Unicode字符到内存里，编辑完成后，保存的时候再把Unicode转换为UTF-8保存到文件：
 
-![rw-file-utf-8](I:\笔记\pictures\编码file-utf8.png)
+![rw-file-utf-8](../../pictures/编码file-utf8.png)
 
 
 

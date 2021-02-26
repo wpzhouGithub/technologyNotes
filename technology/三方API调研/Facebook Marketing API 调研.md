@@ -71,7 +71,7 @@ https://developers.facebook.com/docs/marketing-api/buying-api
 
 ### 3. 不同账号级别的访问权限限制
 
-![1577677892422](I:\笔记\pictures\facebook账号限制.png)
+![1577677892422](../../pictures/facebook账号限制.png)
 
 ### 4. facebook其他API的调用次数限制
 

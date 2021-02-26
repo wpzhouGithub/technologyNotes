@@ -4,11 +4,11 @@
 
 下载地址：[(](https://www.apachehaus.com/cgi-bin/download.plx)https://www.apachehaus.com/cgi-bin/download.plx)
 
-![ab下载](I:\笔记\pictures\ab下载.png)
+![ab下载](../../pictures/ab下载.png)
 
 - 解压
 
-![ab安装](I:\笔记\pictures\ab安装.png)
+![ab安装](../../pictures/ab安装.png)
 
 - 将解压的bin目录添加到环境变量
 

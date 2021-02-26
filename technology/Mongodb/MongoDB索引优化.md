@@ -2,7 +2,9 @@
 
 # 1. 一图看懂索引原理
 
-![img](file:///C:/Users/wpzhou/AppData/Local/YNote/data/327058467@qq.com/ef5fa05d07374631971c5ed2fe1c24fc/clipboard.png)
+![img](../../pictures/MongoDB索引优化/clipboard.png)
+
+
 
 ```shell
 # 初始化数据
