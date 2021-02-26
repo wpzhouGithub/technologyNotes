@@ -46,7 +46,7 @@ typedef struct {
 
 - ob_size 标记了元素个数
 
-![img1](../../pictures/[python数据结构] list 列表底层原理/v2-a2892a8de76c6981f4180a8f84b42da2_720w.png)
+![img1](../../pictures/[python数据结构] list 列表底层原理/v2a2892a8de76c6981f4180a8f84b42da2_720w.png)
 
 
 
