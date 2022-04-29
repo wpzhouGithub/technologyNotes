@@ -1,0 +1,43 @@
+# Spark学习笔记
+
+## Spark是什么、主要功能、优缺点
+
+- 是什么
+  - 计算框架
+  - 分布式
+  - 基于内存
+  - 可以使用HDFS等分布式的数据
+- 主要功能
+  - Sql
+  - streaming 流式计算
+  - 图像处理
+  - 机器学习
+- 优缺点
+  - 高速：基于内存计算
+  - 稳定、高容错：RDD存储计算逻辑、依赖关系，出错可以重新计算；partion的使用，最小化了错误作业的重跑量
+  - 可扩展：可以基于yarn运行，使用yarn进行资源管理；
+
+# Spark运行模式、一个Application运行的完整流程、内部原理
+
+- 运行模式
+  - local
+  - standlone
+  - yarn （product environment）
+- 完整流程
+  - coding（指定运行模式、具体的计算逻辑等）
+  - 提交
+  - 资源：先起master，然后根据具体使用到的数据在对于的DataNode上启动excutor
+  - Job -> DAG -> Shuffle -> Stage -> TaskSet -> Task 
+  - patition
+
+# Spark具体使用：基于RDD开发
+
+# Spark具体使用：SQL
+
+# Spark具体使用：Streaming
+
+# 数据倾斜
+
+# Spark优化
+
+# Spark 坑

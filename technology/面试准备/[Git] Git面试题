@@ -1,0 +1,86 @@
+# Git 面试题
+
+### Git的存储架构
+
+![clipboard.png](../../pictures/[Git] Git面试题/bVbtc0b)
+
+- Git 是分布式版本控制系统（DVCS）。它可以跟踪文件的更改，并允许你恢复到任何特定版本的更改。
+- 每个开发人员都可以“克隆”我在图中用“Local repository”标注的存储库的副本，并且在他的硬盘驱动器上具有项目的完整历史记录，因此当服务器中断时，你需要的所有恢复数据都在你队友的本地 Git 存储库中。
+- 还有一个中央云存储库，开发人员可以向其提交更改，并与其他团队成员进行共享，如图所示，所有协作者都在提交更改“远程存储库”。
+
+
+
+### 在Git中，你如何撤销已经 push 并公开的提交？
+
+1. 在现有commit的基础上，修改要撤销的文件，然后再commit
+
+   ```bash
+   # 先修改要撤销的文件修改
+   git commit -m 'revert commit for file1'
+   git push origin master
+   ```
+
+- 优点：工作量少，直接修改提交即可
+
+- 缺点：这样提交，会多一条提交记录； commit message没那么直观
+
+  
+
+2. 使用`revert`命令
+
+   ```bash
+   # 注意revert commit_id之后，本地目录commit_id的内容修改都没有了
+   # 同时会产生一条revert_message_id
+   git revert commit_id
+   
+   # 本地reset到commit_id的内容
+   git reset --hard commit_id
+   # 让本地的commit回到revert_message_id
+   git reset --soft revert_message_id
+   
+   # 修改要撤销的文件修改
+   git commit -m 'commit message'
+   git push origin master
+   ```
+
+- 优点：提交记录上可以很明显的看到，有revert记录；然后再重新提交正确的提交
+
+- 缺点：没有做到无痕的，在remote库任然可以看出有过commit
+
+  
+
+3. 使用`git push origin master –force`
+
+   ```bash
+   # 通过git reset –soft <版本号>重置至指定版本的提交，达到撤销提交的目的
+   git reset --soft aa909cff2239536df14820fe086d96305b24e9f1
+   
+   # 通过git push origin master –force强制提交当前版本号，以达到撤销版本号的目的
+   # 必须添加参数force进行强制提交，否则会提交失败；本地版本behind了
+   git push origin  master --force
+   
+   # 修改代码，重新提交和推送
+   git commit -m 'commit message'
+   git push origin master
+   ```
+
+   优点：local、remote都没有提交痕迹，改成了最初想提交的正确提交；但是需要确保你回退的提交之后没有人提交
+
+   缺点：多人合作的时候，容易覆盖别人的提交； 然后别人pull的时候会冲突；
+
+
+
+### 把配置文件推送到了远程仓库，怎样删除远程仓库的该配置文件，本地还要用到这个文件
+
+```bash
+# git rm --cached
+# Use this option to unstage and remove paths only from the index. Working tree files, whether modified or not, will be left alone.
+git rm --cached filename
+
+# 本地需要，远程仓库不需要，肯定是要把那个文件写入 .gitignore 文件里面
+echo filename >> .gitignore
+```
+
+
+
+### tag 的使用

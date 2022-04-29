@@ -170,7 +170,7 @@ Anaconda可以在以下系统平台中安装和使用：
 
 
 
-## 三、Anaconda 安装及使用
+## 三、Anaconda Ubuntu 安装及使用
 
 如前文所说，如果不需要Anaconda里的众多包，可以安装Miniconda
 
@@ -274,3 +274,42 @@ conda install 要安装的包名
 
 ​    
 
+## 四、Anaconda Windows下载安装
+
+　　**步骤一：**进入官网（https://www.anaconda.com/download/#windows）下载对应正确的版本，这里选择的是Windows 64bit；
+
+　　![img](../../pictures/[python环境安装] Anaconda安装/1395049-20180627155513181-370398023.png)
+
+　　**步骤二：**双击下载好的exe文件进行安装，点击next,点击i agree，选择just for me点击next，点击browse选择安装目录，勾选红色框点击install等待完成，点击next，点击skip，取消两个勾选框点击finish；
+
+　　![img](../../pictures/[python环境安装] Anaconda安装/1395049-20180627174045145-1882670139.png)
+
+　　![img](../../pictures/[python环境安装] Anaconda安装/1395049-20180627174051464-1613269162.png)
+
+　　![img](../../pictures/[python环境安装] Anaconda安装/1395049-20180627174059805-518251280.png)
+
+　　![img](../../pictures/[python环境安装] Anaconda安装/1395049-20180627174106997-272201705.png)
+
+　　![img](../../pictures/[python环境安装] Anaconda安装/1395049-20180627174114268-528763384.png)
+
+　　![img](../../pictures/[python环境安装] Anaconda安装/1395049-20180627174122585-122074202.png)
+
+　　
+
+　　![img](../../pictures/[python环境安装] Anaconda安装/1395049-20180627174553298-901141245.png)
+
+　　![img](../../pictures/[python环境安装] Anaconda安装/1395049-20180627174540730-187515295.png)
+
+　　**步骤三：**按win+R,输入cmd进入终端，输入python，如果出现Python版本信息说明安装成功（如果看不到尝试先进入安装目录在输入python），然后再次进入终端切换盘符到Anaconda安装目录输入conda list 就可以查询现在安装了哪些库，初次安装的包一般比较老，为了避免之后使用报错，可以输入 conda update --all 命令，把所有包进行更新，在提示是否更新的时候输入 y（Yes）让更新继续，等待完成即可。
+
+　　![img](../../pictures/[python环境安装] Anaconda安装/1395049-20180627175112390-508244618.png)
+
+　　![img](../../pictures/[python环境安装] Anaconda安装/1395049-20180627175118673-695079968.png)
+
+　　![img](../../pictures/[python环境安装] Anaconda安装/1395049-20180627175131963-1608191336.png)
+
+　　![img](../../pictures/[python环境安装] Anaconda安装/1395049-20180627175139819-1899773587.png)
+
+　　![img](../../pictures/[python环境安装] Anaconda安装/1395049-20180627175611887-307735555.png)
+
+　　
